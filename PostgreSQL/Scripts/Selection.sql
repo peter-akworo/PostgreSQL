@@ -14,5 +14,5 @@ insert into customers values (5, 'Funkmaster, Freddy', '555-FUNK', null, null);-
 select * from customers;--retrieve all column values in table customers
 select * from customers where balance is null;--retrieve rows in table customers where column balance is null
 select * from customers where balance is not null;--retrieve rows in table customers where column balance is not null
-
+select  customer_id, customer_name, balance, balance+4 from customers--you can't do math with null values
 

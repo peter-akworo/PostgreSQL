@@ -10,5 +10,6 @@ select customer_name, phone from customers where (balance = 0) and (age(birth_da
 select customer_name, phone from customers where (balance = 0) or (age(birth_date) < '50 years');--retrieve rows that meet either of the two column constraints
 select * from customers where not(balance = 0);--retrieve rows from table customers where balance is not 0
 select customer_id, customer_name from customers where balance != 0;--constraint doesn't have to be part of the result set
-
-
+insert into customers values (5, 'Funkmaster, Freddy', '555-FUNK', null, null);--insert row in customer table with null values
+select * from customers;--retrieve all column values in table customers
+select * from customers where balance is null;--retrieve rows in table customers where column balance is null

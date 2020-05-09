@@ -13,3 +13,6 @@ select customer_id, customer_name from customers where balance != 0;--constraint
 insert into customers values (5, 'Funkmaster, Freddy', '555-FUNK', null, null);--insert row in customer table with null values
 select * from customers;--retrieve all column values in table customers
 select * from customers where balance is null;--retrieve rows in table customers where column balance is null
+select * from customers where balance is not null;--retrieve rows in table customers where column balance is not null
+
+

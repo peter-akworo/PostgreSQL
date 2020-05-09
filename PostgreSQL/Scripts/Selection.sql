@@ -7,4 +7,5 @@ select title, tape_id from tapes;--retrieve two columns duplicate on one(title) 
 select distinct on(title) title, tape_id from tapes;--filter out rows that have duplicate values in one or more columns
 select * from customers where balance > 0;--retrieve rows where column(balance) is more than 0
 select customer_name, phone from customers where (balance = 0) and (age(birth_date) < '50 years');--retrieve rows that meet the two column constraints
+select customer_name, phone from customers where (balance = 0) or (age(birth_date) < '50 years');--retrieve rows that meet either of the two column constraints
 

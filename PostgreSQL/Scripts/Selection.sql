@@ -5,3 +5,5 @@ select customer_name, birth_date, age(birth_date) from customers;--retrieve colu
 select distinct title from tapes;--filters out duplicate rows from the result set
 select title, tape_id from tapes;--retrieve two columns duplicate on one(title) distinct on another(tape_id)
 select distinct on(title) title, tape_id from tapes;--filter out rows that have duplicate values in one or more columns
+select * from customers where balance > 0;--retrieve rows where column(balance) is more than 0
+

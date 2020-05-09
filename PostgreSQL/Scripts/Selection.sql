@@ -16,5 +16,5 @@ select * from customers where balance is null;--retrieve rows in table customers
 select * from customers where balance is not null;--retrieve rows in table customers where column balance is not null
 select  customer_id, customer_name, balance, balance+4 from customers;--you can't do math with null values
 select title, coalesce(male_lead,'unknown') from tapes;--coalesce will substitute to unknown wherever it encounters null
-
+select title, coalesce(male_lead, female_lead, 'unknown') as "starring" from tapes;--substitutes  to unknown if both leads are null and picks male_lead if both are present, otherwise pick female_lead as starring.
 
